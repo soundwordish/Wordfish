@@ -36,7 +36,7 @@ let leviathanActive = false;
 function preload() {
   // Corrected paths for same-folder assets directory
   loadTable('./assets/FW_Wordfish_Pool.csv', 'csv', (t) => { joycePool = t.getColumn(0); });
-  loadTable('./assets/mobywords.csv', 'csv', (t) => { mobyPool = t.getColumn(0); });
+  loadTable('./assets/Mobywords.csv', 'csv', (t) => { mobyPool = t.getColumn(0); });
   loadTable('./assets/thunderwords.csv', 'csv', (t) => { thunderPool = t.getColumn(0); });
   loadTable('./assets/whale.csv', 'csv', (t) => { whalePool = t.getColumn(0); });
   mergeSFX = loadSound('./assets/merge.wav');
