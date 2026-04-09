@@ -46,6 +46,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   // Audio setup for the ambient file
   ambient = createAudio('./assets/ambient.mp3'); 
+  ambient.volume(0); // This mutes this specific file
   ambient.hide(); 
   
   calculateResponsiveScale();
