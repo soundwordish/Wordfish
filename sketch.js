@@ -78,8 +78,8 @@ function draw() {
     textFont('Georgia'); textSize(54 * globalScale);
     text("Moby's Wake", width/2, height/2 - 60);
     textSize(24 * globalScale);
-    text("Concept and Visualization - David Braden", width/2, height/2 + 15)
-    text("Audio - David Braden and Barry Tribuzio", width/2, height/2 + 15)
+    text("Concept and Visualization - David Braden", width/2, height/2 + 15);
+    text("Audio - David Braden and Barry Tribuzio", width/2, height/2 + 15);
     textSize(54 * globalScale);
     text("Click To Begin Dream", width/2, height/2 + 20);
     return;
