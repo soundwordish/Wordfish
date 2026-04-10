@@ -79,7 +79,7 @@ function draw() {
     text("Moby's Wake", width/2, height/2 - 60);
     textSize(24 * globalScale);
     text("Concept and Visualization - David Braden/Audio - David Braden and Barry Tribuzio", width/2, height/2 + 15);
-    textSize(54 * globalScale);
+    textSize(24 * globalScale);
     text("Click To Begin Dream", width/2, height/2 + 20);
     return;
   if (frameCount % 61200 === 1) { 
