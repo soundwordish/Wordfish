@@ -74,14 +74,26 @@ function draw() {
   background(currentBG);
 
   if (!isStarted) {
-    fill(255); textAlign(CENTER, CENTER); 
-    textFont('Georgia'); textSize(54 * globalScale);
-    text("Moby's Wake", width/2, height/2 - 60);
+    if (!isStarted) {
+    fill(255); 
+    textAlign(CENTER, CENTER); 
+    textFont('Georgia'); 
+    
+    // TITLE (Raised slightly higher)
+    textSize(54 * globalScale);
+    text("Moby's Wake", width/2, height/2 - 80);
+    
+    // ATTRIBUTION (Smaller font and centered)
+    // I added \n to create a line break between credits
+    textSize(16 * globalScale); 
+    text("Concept and Visualization: David Braden ~ Audio: David Braden and Barry Tribuzio", width/2, height/2 + 10);
+    
+    // CALL TO ACTION (Pushed lower to give the credits breathing room)
     textSize(24 * globalScale);
-    text("Concept and Visualization - David Braden/Audio - David Braden and Barry Tribuzio", width/2, height/2 + 15);
-    textSize(24 * globalScale);
-    text("Click To Begin Dream", width/2, height/2 + 20);
+    text("Click To Begin Dream", width/2, height/2 + 90);
+    
     return;
+}
   if (frameCount % 61200 === 1) { 
     ambient.time(0); // Rewind playhead to 00:00
     ambient.play();  // Ensure it starts playing
