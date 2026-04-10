@@ -1,6 +1,6 @@
 // --- MIXING BOARD & CONFIGURATION ---
 let ambient;
-let masterBGVolume = 0.0;     
+let masterBGVolume = 1.0;     
 let masterMergeVolume = 0.15; 
 let maxWordLength = 30;       
 let isStarted = false;
@@ -45,7 +45,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   // Audio setup for the ambient file
-  ambient = createAudio('./assets/ambient.mp3'); 
+  ambient = createAudio('./assets/warm eternity.mp3'); 
   ambient.hide(); 
   
   calculateResponsiveScale();
