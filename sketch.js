@@ -80,6 +80,10 @@ function draw() {
     textSize(24 * globalScale);
     text("Click To Begin Dream", width/2, height/2 + 20);
     return;
+  if (frameCount % 61200 === 1) { 
+    ambient.time(0); // Rewind playhead to 00:00
+    ambient.play();  // Ensure it starts playing
+  }
   }
 
   if (elapsed > resetTime) { resetCycle(); return; }
