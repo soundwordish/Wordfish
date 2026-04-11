@@ -45,7 +45,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   // Audio setup for the ambient file
-  ambient = createAudio('./assets/fivefathomsofeternity.mp3'); 
+  ambient = createAudio('./assets/warm eternity.mp3'); 
   ambient.hide(); 
   
   calculateResponsiveScale();
