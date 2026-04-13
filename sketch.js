@@ -1,7 +1,7 @@
 // --- MIXING BOARD & CONFIGURATION ---
 let ambient;
 let masterBGVolume = 1.0;     
-let masterMergeVolume = 0.15; 
+let masterMergeVolume = 0.05; 
 let maxWordLength = 30;       
 let isStarted = false;
 
@@ -45,7 +45,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   // Audio setup for the ambient file
-  ambient = createAudio('./assets/fivefathomsofeternity.mp3'); 
+  ambient = createAudio('./assets/wordocean.mp3'); 
   ambient.hide(); 
   
   calculateResponsiveScale();
