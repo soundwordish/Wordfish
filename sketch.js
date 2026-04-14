@@ -1,7 +1,7 @@
 // --- MIXING BOARD & CONFIGURATION ---
 let ambient;
-let masterBGVolume = 1.0;     
-let masterMergeVolume = 0.05; 
+let masterBGVolume = 0.5;     
+let masterMergeVolume = 0.00; 
 let maxWordLength = 30;       
 let isStarted = false;
 
